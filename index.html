@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Simple Calculator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+
+    <div class="calc-div">
+
+        <!--OUTPUT-->
+        <div class="calc-output-div">
+            <input id = "calc-display" class="calc-output" type="text" placeholder="0">
+        </div>
+        <!--OUTPUT-->
+
+
+        <!--INPUTS-->
+        <div class="calc-inputs-div">
+
+            <button onclick="clearScreen()">C</button>
+            <button onclick="deleteDigit()">Del</button>
+            <button onclick="displayDigit()">%</button>
+            <button onclick="displayDigit('/')">/</button>
+            <button onclick="displayDigit('*')">*</button>
+            <button onclick="displayDigit('+')">+</button>
+            <button onclick="displayDigit('-')">-</button>
+
+            <button onclick="displayDigit('1')">1</button>
+            <button onclick="displayDigit('2')">2</button>
+            <button onclick="displayDigit('3')">3</button>
+            <button onclick="displayDigit('4')">4</button>
+            <button onclick="displayDigit('5')">5</button>
+            <button onclick="displayDigit('6')">6</button>
+            <button onclick="displayDigit('7')">7</button>
+            <button onclick="displayDigit('8')">8</button>
+            <button onclick="displayDigit('9')">9</button>
+            <button onclick="displayDigit('0')">0</button>
+
+
+            <button onclick="displayDigit('.')">.</button>
+            <button style="width: 100px;" onclick="displayResult('=')">=</button>
+
+
+
+        </div>
+        <!--INPUTS-->
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
