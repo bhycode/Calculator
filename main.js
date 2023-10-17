@@ -2,23 +2,23 @@ let outputEdt = document.getElementById("calc-display");
 
 
 function displayDigit(num) {
-    document.getElementById("calc-display").value += num;
+    outputEdt.value += num;
 }
 
 
 function clearScreen() {
-    document.getElementById("calc-display").value = "";
+    outputEdt.value = "";
 }
 
 function deleteDigit() {
-    document.getElementById("calc-display").value = document.getElementById("calc-display").value.slice(0, -1);
+    outputEdt.value = outputEdt.value.slice(0, -1);
 }
 
 
 function displayResult() {
     try {
-        document.getElementById("calc-display").value = eval(document.getElementById("calc-display").value);
+        outputEdt.value = eval(outputEdt.value);
     } catch(ex) {
-        document.getElementById("calc-display").value = "Error!"
+        outputEdt.value = "Error! ";
     }
 }
